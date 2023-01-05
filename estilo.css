@@ -1,32 +1,37 @@
 body{
     background-color: #fff;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: larger;
-    margin-top: 30px;
+    margin-top: 50px;
 }
-div{
-    width: 520px;
-    margin: 15px;
-    
+.añadir, .prim{
+    width: 30rem;
+    margin: 1rem 0.8rem;
 }
-.prim{
+ .prim{
     display: flex;
     justify-content: center;
-    
+
+}
+.añadir{
+    background-color: rgba(238, 238, 238, 0.899);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
 }
 #name{
-    padding: 10px 20px;
-    margin-right: 22px;
+    padding: 0.7rem 1.3rem;
+    margin-right: 1.5rem;
     border-radius: 6px;
     font-size: large;
     border: solid 3px rgb(2, 144, 210,0.7);
 
 }
+
 #add{
     font-size: medium;
-    margin: 3px 15px;
+    margin: 0.25rem 1rem;
     color: #fff;
     font-weight:900;
     border: solid 2px rgb(76, 198, 255);
@@ -44,17 +49,18 @@ div{
 }
 
 .lista{
-    width: 510px;
+    
+    height: 5.2rem;
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: flex-end;
+    align-items: center;
     color: #000;
 }
 h2{
     text-align: center;
-    height: 40px;
-    width: 260px;
-    margin:30px 25px;
+    height: 2.5rem;
+    width: 17rem;
+    margin:2rem;
     border-bottom: solid 1.5px rgb(2, 144, 210);
     
 }
@@ -64,21 +70,21 @@ h2:focus{
     border-bottom: solid 2px rgb(3, 159, 232);
     color: rgb(91, 107, 114);
 }
+
 .imposible, .del, .posible{
-    height: 35px;
+    height: 1.8rem;
     font-size: medium;
-    margin: auto  3px;
+    margin: 0.2rem  0.1rem;
     background: transparent;
     border: none;
     color: #000;
-
 }
 .imposible{
-    margin-left: 30px;
+    
     color: rgb(143, 141, 141);
 }
 .posible{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .posible:hover{
     color: rgb(3, 154, 224);
@@ -95,4 +101,4 @@ h2:focus{
     background-color: rgba(248, 69, 69, 0.403);
     color: #fff;
     border-radius: 10px;
-}
+} 
