@@ -1,0 +1,98 @@
+body{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content:center;
+    font-size: larger;
+    margin-top: 30px;
+}
+div{
+    width: 520px;
+    margin: 15px;
+    
+}
+.prim{
+    display: flex;
+    justify-content: center;
+    
+}
+#name{
+    padding: 10px 20px;
+    margin-right: 22px;
+    border-radius: 6px;
+    font-size: large;
+    border: solid 3px rgb(2, 144, 210,0.7);
+
+}
+#add{
+    font-size: medium;
+    margin: 3px 15px;
+    color: #fff;
+    font-weight:900;
+    border: solid 2px rgb(76, 198, 255);
+    border-radius: 8px;
+    background-color: rgb(2, 144, 210);
+}
+#add:hover{
+    background-color: rgb(76, 198, 255);
+    color: #fff;
+    
+}
+#add:active{
+    background-color: #fff; 
+    color: rgb(76, 198, 255) ;
+}
+
+.lista{
+    width: 510px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    color: #000;
+}
+h2{
+    text-align: center;
+    height: 40px;
+    width: 260px;
+    margin:30px 25px;
+    border-bottom: solid 1.5px rgb(2, 144, 210);
+    
+}
+h2:focus{
+    border: none;
+    outline: none;
+    border-bottom: solid 2px rgb(3, 159, 232);
+    color: rgb(91, 107, 114);
+}
+.imposible, .del, .posible{
+    height: 35px;
+    font-size: medium;
+    margin: auto  3px;
+    background: transparent;
+    border: none;
+    color: #000;
+
+}
+.imposible{
+    margin-left: 30px;
+    color: rgb(143, 141, 141);
+}
+.posible{
+    color: rgb(255, 255, 255);
+}
+.posible:hover{
+    color: rgb(3, 154, 224);
+}
+.posible:active{
+    background-color: rgb(76, 198, 255);
+    color: #fff;
+    border-radius: 10px;
+}
+.del:hover{
+    color: rgb(248, 69, 69);
+}
+.del:active{
+    background-color: rgba(248, 69, 69, 0.403);
+    color: #fff;
+    border-radius: 10px;
+}
