@@ -6,14 +6,20 @@ body{
     font-size: larger;
     margin-top: 50px;
 }
-.añadir, .prim{
+.añadir, form{
     width: 30rem;
     margin: 1rem 0.8rem;
 }
- .prim{
+ form{
     display: flex;
     justify-content: center;
 
+}
+#hours{
+    border: solid 3px rgb(2, 144, 210,0.7);   
+    border-radius: 6px;
+    margin: 0 0.2rem;
+    font-size: medium;
 }
 .añadir{
     background-color: rgba(238, 238, 238, 0.899);

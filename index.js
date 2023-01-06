@@ -90,6 +90,7 @@ const leer  = () => {
 
 document.getElementById("add").addEventListener("click",(e)=>{
     console.log("clickeado")
+    e.preventDefault();
     let entrada = document.getElementById("name").value;
     if(entrada.length>0){
         addObjeto({nombre:entrada}); 
