@@ -15,12 +15,7 @@ body{
     justify-content: center;
 
 }
-#hours{
-    border: solid 3px rgb(2, 144, 210,0.7);   
-    border-radius: 6px;
-    margin: 0 0.2rem;
-    font-size: medium;
-}
+
 .añadir{
     background-color: rgba(238, 238, 238, 0.899);
     padding: 1rem 1.5rem;
@@ -62,15 +57,16 @@ body{
     align-items: center;
     color: #000;
 }
-h2{
+h3{
     text-align: center;
     height: 2.5rem;
     width: 17rem;
     margin:2rem;
     border-bottom: solid 1.5px rgb(2, 144, 210);
+    font-size: x-large;
     
 }
-h2:focus{
+h3:focus{
     border: none;
     outline: none;
     border-bottom: solid 2px rgb(3, 159, 232);

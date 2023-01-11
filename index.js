@@ -5,12 +5,16 @@ function sendData(modo){
     return IDBtransaction;
 } 
 const nombresHTML = (id,nam) => {
+    const fragmento = document.createDocumentFragment();
     const container = document.createElement("DIV");    
-    const letra = document.createElement("H2");
+    const check = document.createElement("INPUT");
+    const letra = document.createElement("H3");
     const addbutton = document.createElement("BUTTON");
     const delbutton = document.createElement("BUTTON");
+    
 
     container.classList.add("lista");
+    check.classList.add("check");
     letra.classList.add("nombres");
     addbutton.classList.add("imposible");
     delbutton.classList.add("del");
@@ -19,11 +23,14 @@ const nombresHTML = (id,nam) => {
     delbutton.textContent = "eliminar";
     letra.textContent = nam.nombre;
 
+    check.setAttribute("type","checkbox");
     letra.setAttribute("contenteditable","true");
     letra.setAttribute("spellcheck","false")
-    container.appendChild(letra);
-    container.appendChild(addbutton);
-    container.appendChild(delbutton);  
+    fragmento.appendChild(check);
+    fragmento.appendChild(letra);
+    fragmento.appendChild(addbutton);
+    fragmento.appendChild(delbutton);  
+    container.appendChild(fragmento);
 
     letra.addEventListener("keyup",()=>{
         addbutton.classList.replace("imposible","posible");
