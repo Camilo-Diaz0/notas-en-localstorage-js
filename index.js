@@ -48,6 +48,18 @@ const nombresHTML = (id,nam) => {
         document.querySelector(".añadir").removeChild(container);
 
     })
+    let conteo = 0;
+    check.addEventListener("click", () => {
+        console.log("probando checkbox")
+        conteo++;
+        if(conteo%2 !== 0){
+            container.style = "background-color:rgb(196, 254, 196);"
+            letra.style = "border-color: grey;"
+        }else{
+            container.style = "background-color:rgba(238, 238, 238, 0.899);"
+            letra.style = "border-color: rgb(2, 144, 210);"
+        }
+    })
 
     return container;
 }
@@ -102,7 +114,7 @@ document.getElementById("add").addEventListener("click",(e)=>{
     if(entrada.length>0){
         addObjeto({nombre:entrada}); 
         leer();
-    }
-    
+    }  
 })
+
  

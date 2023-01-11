@@ -18,8 +18,9 @@ body{
 
 .añadir{
     background-color: rgba(238, 238, 238, 0.899);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
+    padding: 1rem 0.2rem;
+    border-radius: 10px;
+    width: 35rem;
 }
 #name{
     padding: 0.7rem 1.3rem;
@@ -51,17 +52,18 @@ body{
 
 .lista{
     
-    height: 5.2rem;
+    height: 4.8rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     color: #000;
+    border-radius: 10px;
 }
 h3{
     text-align: center;
     height: 2.5rem;
-    width: 17rem;
-    margin:2rem;
+    width: 25rem;
+    /* margin:2rem; */
     border-bottom: solid 1.5px rgb(2, 144, 210);
     font-size: x-large;
     
@@ -72,7 +74,9 @@ h3:focus{
     border-bottom: solid 2px rgb(3, 159, 232);
     color: rgb(91, 107, 114);
 }
-
+.check{
+    margin: 0.5rem;
+}
 .imposible, .del, .posible{
     height: 1.8rem;
     font-size: medium;
