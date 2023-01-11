@@ -42,7 +42,7 @@ body{
 }
 #add:hover{
     background-color: rgb(76, 198, 255);
-    color: #fff;
+    cursor: pointer;
     
 }
 #add:active{
@@ -108,3 +108,21 @@ h3:focus{
     color: #fff;
     border-radius: 10px;
 } 
+#final{
+    width: 10rem;
+    height: 3.5rem;
+    font-size: large;
+    border-radius: 7px;
+    background-color: rgb(3, 131, 190);
+    border: solid 2px rgb(76, 198, 255);
+    color: #fff;
+    font-weight:700;
+}
+#final:hover{
+    background-color: rgb(76, 198, 255);
+    cursor: pointer;
+}
+#final:active{
+    background-color: #fff; 
+    color: rgb(76, 198, 255) ;
+}

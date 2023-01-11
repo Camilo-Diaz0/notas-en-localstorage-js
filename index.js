@@ -117,4 +117,17 @@ document.getElementById("add").addEventListener("click",(e)=>{
     }  
 })
 
- 
+document.getElementById("final").addEventListener("click",()=>{
+    console.log("holaaaaaaaaaaaaaaaaaa");
+    let nuevoarray = [];
+    let contando = 0;
+    document.querySelectorAll(".lista").forEach(item => {
+        if(item.style.backgroundColor == "rgb(196, 254, 196)"){
+            nuevoarray[contando] = item;
+            console.log("0");
+            contando++;
+        }
+    });
+    console.log(nuevoarray);
+    console.log(document.querySelectorAll(".lista").length)
+})
