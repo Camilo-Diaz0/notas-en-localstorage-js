@@ -18,9 +18,9 @@ body{
 
 .añadir{
     background-color: rgba(238, 238, 238, 0.899);
-    padding: 1rem 0.2rem;
+    padding: 1rem 0.8rem;
     border-radius: 10px;
-    width: 35rem;
+    min-width: 35rem;
 }
 #name{
     padding: 0.7rem 1.3rem;
@@ -62,7 +62,7 @@ body{
 h3{
     text-align: center;
     height: 2.5rem;
-    width: 25rem;
+    min-width: 25rem;
     /* margin:2rem; */
     border-bottom: solid 1.5px rgb(2, 144, 210);
     font-size: x-large;
