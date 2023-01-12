@@ -126,3 +126,35 @@ h3:focus{
     background-color: #fff; 
     color: rgb(76, 198, 255) ;
 }
+.modal-contenedor{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.297);
+    display: none;
+    opacity: 0;
+}
+.modal{
+    background-color: #fff;
+    margin: 16rem auto;
+    height: 16rem;
+    width: 30rem;
+    
+}
+.fin{
+    display: flex;
+    height: 16rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+@keyframes aparecer {
+
+    100%{
+        opacity: 1;
+    }
+    
+}

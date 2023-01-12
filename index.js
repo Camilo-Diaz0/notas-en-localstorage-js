@@ -119,15 +119,37 @@ document.getElementById("add").addEventListener("click",(e)=>{
 
 document.getElementById("final").addEventListener("click",()=>{
     console.log("holaaaaaaaaaaaaaaaaaa");
+    const listdivs = document.querySelectorAll(".lista")
     let nuevoarray = [];
     let contando = 0;
-    document.querySelectorAll(".lista").forEach(item => {
+    listdivs.forEach(item => {
         if(item.style.backgroundColor == "rgb(196, 254, 196)"){
             nuevoarray[contando] = item;
             console.log("0");
             contando++;
         }
+
     });
     console.log(nuevoarray);
-    console.log(document.querySelectorAll(".lista").length)
+    console.log(listdivs.length)
+    mostrarRs(listdivs.length, nuevoarray.length);
 })
+function mostrarRs(obj,objCum){
+    let textmodal = "";
+    if(objCum/obj <= 0.4){
+        textmodal = "che loco, mal ahi, tenes que ponerte las pilas";
+    }else if(objCum/obj > 0.4 && objCum/obj < 0.7 ){
+        textmodal = "felicidades, lo hiciste muy bien, pero puedes hacerlo mejor";
+    }else{
+        textmodal = "lo estas haciendo perfecto, sigue asi y conseguiras todos tus objetivos";
+    }
+    const back = document.querySelector(".modal-contenedor");
+    const modal = document.querySelector(".modal");
+    modal.innerHTML += `<div class="fin"><h4>${textmodal}</4>
+    <h2>Has logarado completar ${objCum}/${obj}</h2>
+    </div>`;
+    
+    back.style.display="flex";
+    back.style.animation = "aparecer 1s forwards";
+   
+}
